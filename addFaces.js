@@ -3,10 +3,10 @@ const path = require('path');
 const fs = require('fs');
 const recognizer = fr.AsyncFaceRecognizer();
 
-const dataPath = path.resolve('./robert');
-const allFiles = fs.readdirSync(dataPath)
-                .map(f => path.join(dataPath, f));
-const allImgs = allFiles.map(image => fr.loadImage(image));
+// const dataPath = path.resolve('./robert');
+// const allFiles = fs.readdirSync(dataPath)
+//                 .map(f => path.join(dataPath, f));
+// const allImgs = allFiles.map(image => fr.loadImage(image));
 // recognizer.addFaces(allImgs, 'robert')
 // .then(() => {
 //     const modelState = recognizer.serialize();
